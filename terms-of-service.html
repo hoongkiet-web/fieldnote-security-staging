@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service - Fieldnote Security</title>
+<meta name="description" content="The terms that apply to a Fieldnote Security engagement - authorization, liability, payment, confidentiality, and delivery.">
+<link rel="stylesheet" href="css/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://fieldnotesecurity.com/#organization",
+  "name": "Fieldnote Security",
+  "url": "https://fieldnotesecurity.com",
+  "email": "contact@fieldnotesecurity.com"
+}
+</script>
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-row">
+    <a href="index.html" class="wordmark">Field<span>note</span> Security</a>
+    <nav class="nav-links">
+      <a href="services.html">Services</a>
+      <a href="sample-report.html">Sample Report</a>
+      <a href="gdpr-checker.html">GDPR Checker</a>
+      <a href="email-security.html">Email Security</a>
+      <a href="accessibility-checker.html">Accessibility</a>
+      <a href="third-party-audit.html">Script Audit</a>
+      <a href="domain-dns-check.html">DNS Checker</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="btn btn-primary">Request an assessment</a>
+    </nav>
+    <button class="mobile-menu-btn" aria-label="Menu" aria-expanded="false" id="menuBtn">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+        <path d="M2 4.5H16M2 9H16M2 13.5H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Terms of Service</h1>
+      <p>What applies once you engage Fieldnote Security for an assessment.</p>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="container">
+      <div class="legal-body reveal">
+        <p class="legal-updated">Last updated: 18 August 2026</p>
+
+        <h2>Business status</h2>
+        <p>Fieldnote Security is operated by Kiet Hoong through <span class="legal-placeholder">[COMPANY LEGAL NAME TBC]</span>, a limited company registered in England and Wales. Company number: <span class="legal-placeholder">[COMPANY NUMBER TBC]</span>. Registered office: <span class="legal-placeholder">[REGISTERED ADDRESS TBC]</span>.</p>
+
+        <h2>Nature of services</h2>
+        <p>Fieldnote Security provides authorized security scanning and manual review services - vulnerability assessment, GDPR compliance checks, email security checks, accessibility checks, third-party script audits, and domain/DNS health checks. Every scan is authorized-only: no scan is run against a domain or target until the client has confirmed, in writing, that they are authorized to grant that permission. This written record is collected via the <a href="authorization-form.html">authorization form</a> before any assessment begins.</p>
+
+        <h2>Scope of liability</h2>
+        <p>Reports reflect the findings identified at the time the scan was run. They are a snapshot, not a guarantee - security postures change as configurations, software, and threats change, and a clean report today doesn't mean a domain will remain free of new vulnerabilities tomorrow. Fieldnote Security is not liable for issues that arise, or are discovered, after the assessment date.</p>
+
+        <h2>Payment terms</h2>
+        <p class="legal-placeholder">[Payment terms - placeholder, pending final invoicing setup. Specific terms (deposit, invoicing schedule, accepted payment methods) will be confirmed here once decided.]</p>
+
+        <h2>Confidentiality</h2>
+        <p>Any data, scan targets, or report contents shared as part of an engagement are treated as confidential. Reports and findings are not shared with any third party without the client's permission, and are not used as case studies, testimonials, or public examples unless the client agrees to that separately.</p>
+
+        <h2>Service delivery timelines</h2>
+        <p class="legal-placeholder">[Delivery timelines - TBC. Typical turnaround will be confirmed here once a consistent baseline has been established across engagements.]</p>
+
+        <h2>Governing law</h2>
+        <p>These terms are governed by the law of England and Wales.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="container">
+      <h2>Questions about these terms?</h2>
+      <a href="mailto:contact@fieldnotesecurity.com" class="btn btn-primary">Email contact@fieldnotesecurity.com</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <div class="footer-links">
+      <a href="services.html">Services</a>
+      <a href="sample-report.html">Sample Report</a>
+      <a href="gdpr-checker.html">GDPR Checker</a>
+      <a href="email-security.html">Email Security</a>
+      <a href="accessibility-checker.html">Accessibility</a>
+      <a href="third-party-audit.html">Script Audit</a>
+      <a href="domain-dns-check.html">DNS Checker</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+    </div>
+    <p class="footer-meta"><a href="mailto:contact@fieldnotesecurity.com">contact@fieldnotesecurity.com</a> &nbsp;·&nbsp; Authorized use only &nbsp;·&nbsp; © 2026 Fieldnote Security</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var menuBtn = document.getElementById('menuBtn');
+  var navLinks = document.querySelector('.nav-links');
+  if (menuBtn && navLinks) {
+    menuBtn.addEventListener('click', function () {
+      var open = navLinks.classList.toggle('mobile-open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+
+  if (!('IntersectionObserver' in window)) return;
+  document.documentElement.classList.add('js-ready');
+
+  var els = document.querySelectorAll('.reveal');
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2, rootMargin: '0px 0px -40px 0px' });
+  els.forEach(function (el) { io.observe(el); });
+})();
+</script>
+
+</body>
+</html>
