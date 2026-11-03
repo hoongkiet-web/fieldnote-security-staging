@@ -8,7 +8,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="shortcut icon" href="favicon.ico">
 <title>Accessibility Checker - Fieldnote Security</title>
-<meta name="description" content="Automated WCAG 2.1 AA scan plus a manual review for what tools can't judge - reading order, keyboard usability, real screen-reader use.">
+<meta name="description" content="Automated WCAG 2.2 AA checks plus a manual review for what tools can't judge - reading order, keyboard usability, real screen-reader use.">
 <link rel="canonical" href="https://fieldnotesecurity.com/accessibility-checker.html">
 <script src="js/theme-init.js"></script>
 <link rel="stylesheet" href="css/styles.css">
@@ -28,7 +28,7 @@
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "Accessibility Checker",
-  "description": "Automated WCAG 2.1 AA scan plus a manual review for what tools can't judge - reading order, keyboard usability, real screen-reader use.",
+  "description": "Automated WCAG 2.2 AA checks plus a manual review for what tools can't judge - reading order, keyboard usability, real screen-reader use.",
   "provider": {
     "@id": "https://fieldnotesecurity.com/#organization"
   },
@@ -91,7 +91,7 @@
       <div class="phase-list reveal">
         <div class="phase-row">
           <div><span class="phase-num">PHASE 01</span><h3>Automated Accessibility Scan</h3></div>
-          <p>Missing alt text, insufficient color contrast, ARIA misuse, broken heading structure, and unlabeled form fields - axe-core's WCAG 2.1 AA ruleset, the mechanical checks a machine can verify reliably. This covers roughly 30-50% of real-world WCAG issues, not the full picture.</p>
+          <p>Missing alt text, insufficient color contrast, ARIA misuse, broken heading structure, unlabeled form fields, and touch targets smaller than 24 by 24 pixels - automated checks against WCAG 2.2 Level AA, the mechanical checks a machine can verify reliably. This covers roughly 30-50% of real-world WCAG issues, not the full picture. Five WCAG 2.2 criteria have no automated test, so the manual review covers them: 2.4.11 Focus Not Obscured (Minimum), 2.5.7 Dragging Movements, 3.2.6 Consistent Help, 3.3.7 Redundant Entry, and 3.3.8 Accessible Authentication (Minimum).</p>
         </div>
         <div class="phase-row">
           <div><span class="phase-num">PHASE 02</span><h3>Manual Usability Review</h3></div>
